@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ![App Brewery Banner](Documentation/AppBreweryBanner.png)
 
 # Xylophone
@@ -57,3 +58,6 @@ class ViewController: UIViewController {
 
 ![End Banner](Documentation/readme-end-banner.png)
 
+=======
+# Xylophone-ios13
+>>>>>>> 18d31e2c9e52705036d6082c67049d177b9d3d0e
