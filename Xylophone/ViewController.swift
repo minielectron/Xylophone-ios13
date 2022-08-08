@@ -18,34 +18,10 @@ class ViewController: UIViewController {
     }
 
 
-    @IBAction func cKeyPressed(_ sender: UIButton) {
-        playSound(soundName: "C")
+    @IBAction func keyPressed(_ sender: UIButton) {
+        playSound(soundName: (sender.titleLabel?.text)!)
     }
     
-    @IBAction func dKeyPressed(_ sender: UIButton) {
-        playSound(soundName: "D")
-    }
-    
-    @IBAction func eKeyPressed(_ sender: UIButton) {
-        playSound(soundName: "E")
-    }
-    
-    @IBAction func fKeyPressed(_ sender: UIButton) {
-        playSound(soundName: "F")
-    }
-    
-    @IBAction func gKeyPressed(_ sender: UIButton) {
-        playSound(soundName: "G")
-    }
-    
-    @IBAction func aSoundPressed(_ sender: UIButton) {
-        playSound(soundName: "A")
-    }
-    
-
-    @IBAction func bKeyPressed(_ sender: UIButton) {
-        playSound(soundName: "B")
-    }
     
     func playSound(soundName: String) {
         guard let url = Bundle.main.url(forResource: soundName, withExtension: "wav") else { return }
